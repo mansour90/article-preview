@@ -102,9 +102,6 @@ h5 {
   z-index: 3;
   transform-origin: bottom;
 }
-.share-btn:is(:active, :hover) {
-  background-color: #6e8098;
-}
 .container-share {
   position: absolute;
   width: 100%;
