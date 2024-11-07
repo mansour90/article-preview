@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+  background-color: #ecf2f8;
+  width: 100%;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+  display: grid;
+  place-content: center;
+}
+.article-wrapper {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.images-container {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.drawer-bg {
+  display: block;
+  width: 100%;
+}
+
+.content-container {
+  background-color: #fff;
+  padding: 36px 32px 16px 32px;
+}
+
+.h1 {
+  color: #48556a;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.subtext {
+  color: #6e8098;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 22px;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+footer {
+  height: 64px;
+  width: 100%;
+  background: #fff;
+}
+.article-writer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.article-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+h4 {
+  font-size: 13px;
+  color: #48556a;
+  line-height: 1.5;
+  font-weight: 700;
+}
+h5 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 2;
+  font-weight: 700;
+  color: #9daec2;
+}
+
+.share-btn {
+  width: 32px;
+  height: 32px;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 3;
+  transform-origin: bottom;
+}
+.share-btn:is(:active, :hover) {
+  background-color: #6e8098;
+}
+.container-share {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #48556a;
+  padding: 24px 32px 28px;
+  display: flex;
+  gap: 16px;
+  transition: all 0.6s ease;
+  display: none;
+}
+
+.container-share.show {
+  display: flex;
+  z-index: 2;
+}
+
+h6 {
+  color: #9daec2;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
